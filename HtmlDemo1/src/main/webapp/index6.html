@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="greet.html" method="post">
+<label>first name:</label>
+<input type="text" name="fname" id="fname"><br><br>
+<label>last name:</label>
+<input type="text" name="lname" id="lname"><br><br>
+<label>password:</label>
+<input type="password" name="pword" id="pword"><br><br>
+<!-- text area -->
+<label> address</label>
+<textarea rows="10" cols="30" name="address"></textarea><br><br>
+
+
+
+<!-- select with option -->
+<label>state</label>
+<select id="state" name="state">
+<option value="karnataka">karnataka</option>
+<option value="kerala">kerala</option>
+<option value="andra">andra</option>
+<option value="tn">tn</option>
+</select><br><br>
+
+
+
+<!-- radio button -->
+<input type="radio" id="range1" name="age" value="30">
+<label for="range1">0-30</label><br>
+<input type="radio" id="range2" name="age" value="30">
+<label for="range1">31-60</label><br>
+<input type="radio" id="range3" name="age" value="30">
+<label for="range1">60-100</label><br><br>
+
+
+
+<!--check box-->
+<!-- int x=10 -->
+<input type="checkbox" id="2vaccine"name="2vaccine" value="2">
+<label for="2vaccine">completed 2 vaccination</label>
+<input type="checkbox" id="1vaccine"name="2vaccine" value="1">
+<label for="1vaccine">completed 1 vaccination</label>
+<input type="checkbox" id="0vaccine"name="2vaccine" value="0">
+<label for="0vaccine">completed 0 vaccination</label><br><br>
+
+<label for="doj">date of join</label>
+<input type="date" id="doj" name="doj"><br><br>
+
+<label for="myemail">enter your email</label>
+<input type="date" id="myemail" name="myemail"><br><br>
+
+<label for="order">enter value between 0-50</label>
+<input type="range" id="order" name="order min="0"><br><br>
+
+<label for="myfile">select file from local drive:</label>
+<input type="file"id="myfile" name="myfile" multiple><br><br>
+
+<input type="submit"value="submit">
+</form>
+</body>
+</html>
