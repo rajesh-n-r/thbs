@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login-Register</title>
+<link rel="stylesheet" href="Styles1.css">
+</head>
+<body>
+<div class="container">
+	<div class="form-box">
+		<div class="button-box">
+		<div id="btn"></div>
+		<button type="button" class="toggle-btn" onclick="login()">Log-In</button>
+  		<button type="button" class="toggle-btn" onclick="register()">Register</button>
+		</div>
+		<div class="social">
+        		<a href="https://www.facebook.com/"><img src="fb.png"></img></a>
+           		<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="gg.png"></a>
+        </div>
+        <form action="availabletrains.html" id="login" class="input-group">
+        <input type="email" class="input-field" placeholder="E-mail" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <button type="submit" class="submit-btn">Log-in</button>
+        </form>
+        <form action="availabletrains.html" id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="Full Name" required>
+        <input type="email" class="input-field" placeholder="E-mail" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <button type="submit" class="submit-btn">Sign-Up</button>
+        </form>
+	</div>
+</div>
+<script src="lr.js"></script>
+</body>
+</html>
