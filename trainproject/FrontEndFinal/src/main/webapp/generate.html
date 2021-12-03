@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TicketGenerate</title>
+<style>
+    div{
+     width:100%;
+	 height:160vh;
+	 background-image:url(generate.jpg);
+	 background-size: cover;
+	 background-position: center;
+    }
+* {
+  font-family: sans-serif;
+}
+	h1 {
+        	color: orange;
+        	font-size: 30px;
+        	font-weight: bold;
+      	}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.content-table th,
+.content-table td {
+  padding: 20px 20px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+</style>
+<script type="text/javascript">
+function Page() {
+	window.print();
+}
+</script>
+</head>
+<body>
+<div>
+<center style="border-style: solid;width:80%;display:block;margin-left:auto;margin-right:auto;">
+<form>
+<table class="content-table">
+<h1>Invoice</h1>
+<tr>
+        <td>PNR           :                 BM_20211112_100</td>
+    </tr>
+    <tr>
+        <td>Train No      :                 1002</td>
+    </tr>
+    <tr>
+        <td>Train Name    :                 Shatabadi Express</td>
+    </tr>
+    <tr>
+        <td>From          :                 Delhi</td>
+    </tr>
+    <tr>
+        <td>To            :                 Bangalore</td>
+    </tr>
+    <tr>
+        <td>Travel date   :                 29/11/2021</td>
+    </tr>  
+    <tr>
+        <td>Passengers    :                 3</td>
+
+    </tr>
+</table>
+<table class="content-table">
+  <thead>
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Fare</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td>Samarth</td>
+      <td>26</td>
+      <td>M</td>
+      <td>2500</td>
+    </tr>
+ <tr>
+      <td>Reethu</td>
+      <td>23</td>
+      <td>F</td>
+      <td>2500</td>
+    </tr>
+   <tr>
+      <td>Nick</td>
+      <td>26</td>
+      <td>F</td>
+      <td>2500</td>
+    </tr>
+    <tr class="active-row">
+        <td>Total Price</td>
+        <td></td>
+        <td></td>
+        <td>7500.00</td>
+    </tr>
+  </tbody>
+</table>
+</form>
+</center>
+</body>
+<br>
+<center>
+<button type="button" onclick="window.print()">Print</button>
+</center>
+</html>
